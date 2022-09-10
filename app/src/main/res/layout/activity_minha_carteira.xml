@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MinhaCarteira"
+    android:background="#E8EAE7">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:background="#7DC351"
+
+
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        app:srcCompat="@drawable/ic_baseline_menu_24"
+        tools:layout_editor_absoluteX="345dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="53dp"
+        android:layout_height="54dp"
+        app:srcCompat="@drawable/ic_baseline_chevron_left_24"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="186dp"
+        android:layout_height="31dp"
+        android:gravity="center"
+        android:text="Minha Carteira "
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <ImageView
+        android:id="@+id/barraFixa"
+        android:layout_width="379dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="248dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="@drawable/barra" />
+
+    <ImageView
+        android:id="@+id/carteira"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/barraFixa"
+        app:layout_constraintTop_toTopOf="@+id/barraFixa"
+        app:srcCompat="@drawable/ic_baseline_account_balance_wallet_24" />
+
+    <TextView
+        android:id="@+id/msgDividendo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Dividendo da carteira "
+        android:textColor="#232121"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="@+id/barraFixa"
+        tools:layout_editor_absoluteX="99dp" />
+
+
+    <TextView
+        android:id="@+id/Rs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$"
+        android:textColor="#47701A"
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="290dp" />
+
+    <TextView
+        android:id="@+id/valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:inputType="number"
+        android:text="593,26"
+        android:textColor="#47701A"
+
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Rs"
+        tools:layout_editor_absoluteY="290dp" />
+
+
+    <ImageView
+        android:id="@+id/visibility"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="@+id/barraFixa"
+        app:srcCompat="@drawable/ic_baseline_visibility_off_24"
+        tools:layout_editor_absoluteX="321dp" />
+
+    <ImageView
+        android:id="@+id/barraFixa3"
+        android:layout_width="379dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="356dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="@drawable/barra" />
+
+    <ImageView
+        android:id="@+id/barraFixa2"
+        android:layout_width="238dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="464dp"
+
+        android:layout_marginEnd="16dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="@drawable/barra" />
+
+    <ImageView
+        android:id="@+id/carteira2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/barraFixa"
+        app:srcCompat="@drawable/ic_baseline_account_balance_wallet_24"
+        tools:layout_editor_absoluteX="50dp" />
+
+
+    <TextView
+        android:id="@+id/msgSaldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Saldo da carteira "
+        android:textColor="#232121"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/barraFixa"
+        tools:layout_editor_absoluteX="96dp" />
+
+    <TextView
+        android:id="@+id/Rs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="4dp"
+        android:text="R$"
+        android:textColor="#47701A"
+
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/valorPositivo"
+        app:layout_constraintTop_toBottomOf="@+id/barraFixa" />
+
+    <TextView
+        android:id="@+id/valorPositivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:inputType="number"
+        android:text="593,26"
+        android:textColor="#47701A"
+        android:textSize="30dp"
+
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/barraFixa"
+        tools:layout_editor_absoluteX="141dp" />
+
+    <ImageView
+        android:id="@+id/visibility"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/barraFixa"
+        app:srcCompat="@drawable/ic_baseline_visibility_off_24"
+        tools:layout_editor_absoluteX="321dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="#FD69AA47"
+        android:text="Extrato"
+        android:textColor="#F8F5F5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="602dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor Restante"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="483dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30,00"
+        android:textColor="#F44336"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="473dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$"
+        android:textColor="#F44336"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="473dp" />
+
+
+</android.support.constraint.ConstraintLayout>
